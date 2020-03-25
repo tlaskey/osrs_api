@@ -11,6 +11,6 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.19.2",
-    "reqi": "^1.0.0"
+    "reqi": "^1.0.3"
   }
 }

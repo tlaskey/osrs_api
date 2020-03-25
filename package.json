@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "Tyler Laskey <tlaskey3@gmail.com> (https://github.com/Tlaskey)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "reqi": "^1.0.0"
+  }
 }

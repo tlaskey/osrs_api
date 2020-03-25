@@ -7,6 +7,7 @@ async function getItem (itemID) {
   const ge = new GrandExchange()
   const response = await ge.getItem(itemID)
   console.log(itemID, response.body)
+  console.log(ge.parseItemBody(response.body))
 }
 
 async function getPlayerHiscores (username, gameMode, category) {

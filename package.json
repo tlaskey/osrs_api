@@ -10,7 +10,9 @@
   "author": "Tyler Laskey <tlaskey3@gmail.com> (https://github.com/Tlaskey)",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2",
     "reqi": "^1.0.3"
+  },
+  "devDependencies": {
+    "standard": "^14.3.3"
   }
 }

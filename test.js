@@ -3,16 +3,17 @@
 const GrandExchange = require('./lib/Grand Exchange/items_api')
 const Hiscores = require('./lib/Hiscores/highscores_api')
 
-async function get_ge_item(item_id) {
-    const ge = new GrandExchange()
-    const response = await ge.get_item(item_id)
-    console.log(response)
+async function getItem (itemID) {
+  const ge = new GrandExchange()
+  const response = await ge.getItem(itemID)
+  console.log(itemID, response.body)
 }
 
-async function get_player_hiscores(username, game_mode, category) {
-    const hiscores = new Hiscores()
-    const responseBody = await hiscores.get_player(username, game_mode)
-    console.log(hiscores.parse_hiscores(responseBody, category))
+async function getPlayerHiscores (username, gameMode, category) {
+  const hiscores = new Hiscores()
+  const responseBody = await hiscores.getPlayer(username, gameMode)
+  console.log(hiscores.parseHiscores(responseBody, category))
 }
 
-get_player_hiscores('Manr', 'main', 'overall')
+getItem(2)
+getPlayerHiscores('Manr', 'main', 'overall')

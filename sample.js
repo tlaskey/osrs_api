@@ -17,4 +17,4 @@ async function getPlayerHiscores (username, gameMode, category) {
 }
 
 getItem(2)
-getPlayerHiscores('Manr', 'main', 'strength')
+getPlayerHiscores('Zezima', 'main', 'strength')
